@@ -1,0 +1,39 @@
+
+
+CREATE TABLE candidates_info (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    state_id INT(11),
+    city_id INT(255),
+    age INT(11),
+    document_path VARCHAR(255)
+);
+ 
+----------------------------------------------------------------
+
+CREATE TABLE cities (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255)
+);
+
+---------- Insert cities into the table
+
+INSERT INTO cities (title) VALUES
+('Mumbai'),
+('Ahmedabad'),
+('Noida'),
+('Jaipur');
+
+
+----------------------------------------------------------------------
+CREATE TABLE states (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255)
+);
+
+------------ Insert states into the table
+INSERT INTO states (title) VALUES
+('Maharashtra'),
+('Gujarat'),
+('Delhi'),
+('Rajasthan');
